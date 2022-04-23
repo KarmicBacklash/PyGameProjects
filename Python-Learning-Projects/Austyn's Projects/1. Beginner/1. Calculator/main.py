@@ -36,8 +36,7 @@ elif inputFunc == "-":
 elif inputFunc == "+":
     result = inputOne + inputTwo
 else:
-    print("Error: Invalid Function")
-    error = 1
+    pass
 
 
 if error == 1:
