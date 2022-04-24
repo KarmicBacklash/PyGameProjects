@@ -3,7 +3,7 @@ Program Name:           Simple Calculator
 Program Creators:       LunarMusician
 Program Purpose:        To understand the basics of Python by creating a calculator
 Date Created:           23 April, 2022
-Date Modified:          24 April, 2022
+Date Modified:          23 April, 2022
 Project Notes:          
 """
 #Importing
@@ -40,6 +40,7 @@ inputCatcher = input('Please enter the first number: ')
 while not inputCatcher.isdigit():
     inputCatcher = input('The first entry must be a number, please try again: ')
 calcInput1 = inputCatcher
+calcInput1 = int(calcInput1)    #Converts the input from string to integer
 inputCatcher = None     #I tried using NULL till Python. It also forced the commented out import NULL line which I moved to the importing section
 
 #Operation
@@ -68,6 +69,7 @@ inputCatcher = input('Please enter the Second number: ')
 while not inputCatcher.isdigit():
     inputCatcher = input('The last entry must be a number, please try again: ')
 calcInput2 = inputCatcher
+calcInput2 = int(calcInput2)    #Converts the input from string to integer
 inputCatcher = None
 
 #Calculation
