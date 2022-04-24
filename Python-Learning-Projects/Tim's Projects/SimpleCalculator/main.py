@@ -3,7 +3,7 @@ Program Name:           Simple Calculator
 Program Creators:       LunarMusician
 Program Purpose:        To understand the basics of Python by creating a calculator
 Date Created:           23 April, 2022
-Date Modified:          23 April, 2022
+Date Modified:          24 April, 2022
 Project Notes:          
 """
 #Importing
