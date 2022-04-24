@@ -10,13 +10,14 @@ Project Notes:
 #from asyncio.windows_events import NULL
 
 #Declaring Variables
-calcInput1 = 0      #The first input in the calculation
-calcInput2 = 0      #The second input for the calculation
-calcResult = 0      #The result of the operation
-calcOperat = '+'    #The symbol for the calculation
-calcType = 0        #Interprets calcOperat as a value for calculation
+calcInput1 = 0.0        #The first input in the calculation
+calcInput2 = 0.0        #The second input for the calculation
+calcResult = 0.0        #The result of the operation
+calcOperat = None       #The symbol for the calculation
+calcType = 0            #Interprets calcOperat as a value for calculation
 
 #Defining functions
+"""
 def calculate(first,op,second):
     match op:
         case '+':     #Addition
@@ -28,6 +29,7 @@ def calculate(first,op,second):
         case '/':     #Division
             calcResult = first / second
     return calcResult
+"""
 
 ######
 #Main#
@@ -42,7 +44,7 @@ inputCatcher = None     #I tried using NULL till Python. It also forced the comm
 
 #Operation
 inputCatcher = input('Please input the type of operation: ')
-while (inputCatcher.isdigit() or inputCatcher.isalpha()) and (inputCatcher != '+' or inputCatcher != '-' or inputCatcher != '*' or inputCatcher != '/' or inputCatcher !='%'):
+while (inputCatcher != '+' and inputCatcher != '-' and inputCatcher != '*' and inputCatcher != '/' and inputCatcher !='%'):
     inputCatcher = input('Operation cannot be a number, character or unrecognized symbol, please try again: ')
 #while inputCatcher != '+' or '-' or '*' or '/' or '%'
 #    inputCatcher = input('Operation symbol')
@@ -58,7 +60,7 @@ match inputCatcher:
     case '%':       #Division 2
         calcType = 3
         calcOperat = '/'
-
+calcOperat = inputCatcher
 inputCatcher = None
 
 #Second Number
@@ -69,12 +71,16 @@ calcInput2 = inputCatcher
 inputCatcher = None
 
 #Calculation
-print(calculate(calcInput1,calcOperat,calcInput2))
-"""
-#print('Result:')
-print(calcInput1)
-print(calcOperat)
-print(calcInput2)
-print('=')
+#print(calculate(calcInput1,calcOperat,calcInput2))
+if (calcOperat == '+'):
+    calcResult = calcInput1 + calcInput2
+elif (calcOperat == '-'):
+    calcResult = calcInput1 - calcInput2
+elif (calcOperat == '*'):
+    calcResult = calcInput1 * calcInput2
+elif (calcOperat == '/'):
+    calcResult = calcInput1 / calcInput2
+else:
+    print ("Syntax Error. calcOperat is '" + calcOperat + "'")
+
 print(calcResult)
-"""
