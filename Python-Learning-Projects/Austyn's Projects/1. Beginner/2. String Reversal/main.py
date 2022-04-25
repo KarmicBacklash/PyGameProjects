@@ -1,4 +1,4 @@
-# Make a string reverser
+# Make a string reverser, gets user input and reverses it.
 
 userStringInput = str(input("Write a sentence of your choice: "))
 
