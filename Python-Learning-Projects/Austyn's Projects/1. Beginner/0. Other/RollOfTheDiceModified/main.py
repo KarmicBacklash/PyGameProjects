@@ -9,39 +9,42 @@ Project Notes:
 """
 import random
 
-class die():
+
+class die:
     def roll(x):
         x = random.randint(1, x)
-        print (x)
+        print(x)
 
-class roll():
+
+class roll:
     def dTwenty():
         x = 20
         die.roll(x)
-        
+
     def dTwelve():
         x = 12
-        die.roll(x)        
+        die.roll(x)
 
     def dTen():
         x = 10
-        die.roll(x)        
+        die.roll(x)
 
     def dEight():
         x = 8
-        die.roll(x)        
+        die.roll(x)
 
     def dSix():
         x = 6
-        die.roll(x)        
+        die.roll(x)
 
     def dFour():
         x = 4
-        die.roll(x)        
+        die.roll(x)
 
     def dTwo():
         x = 2
         die.roll(x)
+
 
 roll.dTwenty()
 roll.dTwelve()

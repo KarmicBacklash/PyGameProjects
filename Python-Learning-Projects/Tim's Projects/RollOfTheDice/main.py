@@ -16,9 +16,11 @@ dSix = 6
 dFour = 4
 dTwo = 2
 
+
 def roll(die):
     dice = random.randrange(1, die)
     return dice
+
 
 print(roll(dTwenty))
 print(roll(dTwelve))

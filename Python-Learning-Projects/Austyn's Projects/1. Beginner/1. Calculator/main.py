@@ -7,7 +7,7 @@ error = 0
 
 # Old Method
 
-#while True:
+# while True:
 #    try:
 #        inputOne = int(input("Please enter the first number: "))
 #        break
@@ -30,7 +30,7 @@ while True:
 
 while True:
     inputFunc = input("Enter a Arithmetic Function (*/+-): ")
-    funcList = ["*","/","+","-"]
+    funcList = ["*", "/", "+", "-"]
     if inputFunc in funcList:
         break
     else:
@@ -38,7 +38,7 @@ while True:
 
 # Old Method
 
-#while True:
+# while True:
 #    try:
 #        inputTwo = int(input("Please enter the Second number: "))
 #        break
@@ -77,4 +77,4 @@ else:
 if error == 1:
     pass
 else:
-    print(inputOne,inputFunc,inputTwo,"=",result)
+    print(inputOne, inputFunc, inputTwo, "=", result)
